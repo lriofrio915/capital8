@@ -14,7 +14,7 @@ const Header = async () => {
           <Logo />
           {user ? (
             <div className="flex space-x-2 items-center">
-              <Link href={"/dashboard"}>Dashboard</Link>
+              <Link href={"/dashboard"}>Panel de Usuario</Link>
               <LogoutButton />
             </div>
           ) : (

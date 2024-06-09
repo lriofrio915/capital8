@@ -1,5 +1,5 @@
 import { FiCheckCircle } from "react-icons/fi";
-import Box from "./_components/Box";
+import Box from "@/src/components/Box";
 
 export default function Home() {
   return (
