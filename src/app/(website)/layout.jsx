@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "@/app/(website)/_components/Header";
+import Header from "../../components/Header";
 
 const layout = ({ children }) => {
   return (
