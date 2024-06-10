@@ -1,6 +1,8 @@
 import { FiCheckCircle } from "react-icons/fi";
 import Box from "../../components/Box";
 import React from "react";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
   return (
