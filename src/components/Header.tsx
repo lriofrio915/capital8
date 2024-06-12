@@ -1,6 +1,6 @@
 import Box from "./Box";
 import Logo from "./Logo";
-import { auth, signIn, signOut } from "@/auth";
+import { auth, signIn, signOut } from "@/src/lib/auth";
 import Link from "next/link";
 import { FiLogOut, FiUser } from "react-icons/fi";
 

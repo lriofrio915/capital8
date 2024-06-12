@@ -1,6 +1,6 @@
 import React from "react";
 import Box from "@/src/components/Box";
-import { auth } from "@/auth";
+import { auth } from "@/src/lib/auth";
 import { redirect } from "next/navigation";
 import {
   createCheckoutLink,
