@@ -10,6 +10,7 @@ import {
 } from "@/src/lib/billing";
 import prisma from "@/src/lib/prisma";
 import Link from "next/link";
+import SubscriptionProfile from "@/src/components/SubscriptionProfile"
 
 const DashboardPage = async () => {
   const session = await auth();
@@ -66,7 +67,7 @@ const DashboardPage = async () => {
           </div>
           {hasSub ? (
             <>
-              <h1 className="text-center">Perfil del Inversor</h1>
+              <SubscriptionProfile/>
             </>
           ) : (
             <>

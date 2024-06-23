@@ -3,7 +3,6 @@ import Box from "@/src/components/Box";
 import React from "react";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import KnowMoreButton from "@/src/components/KnowMoreButton";
 
 export default function Home() {
   return (
