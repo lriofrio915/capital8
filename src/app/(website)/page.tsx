@@ -40,7 +40,7 @@ export default function Home() {
           <h2 className="mt-4 mb-8">
             Nuestro equipo gestiona activamente cuentas de trading
             <br />
-            en el mercado de índices y acciones para maximizar ganancias.
+            en el mercado de índices y acciones.
           </h2>
           <div className="p-4 w-full">
             <div className="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden">
