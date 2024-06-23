@@ -39,9 +39,9 @@ export default function Home() {
             Potencia tu Inversión
           </h1>
           <h2 className="mt-4 mb-8">
-            Nuestro equipo gestiona activamente las cuentas de trading
+            Nuestro equipo gestiona activamente cuentas de trading
             <br />
-            en el mercado de índices y acciones para maximizar las ganancias de sus inversores.
+            en el mercado de índices y acciones para maximizar ganancias.
           </h2>
           <div className="p-4 w-full">
             <div className="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden">
@@ -87,7 +87,9 @@ export default function Home() {
                 </span>
                 Soporte especializado disponible 24/7 vía WhatsApp
               </p>
-              <KnowMoreButton />
+              <button className="flex items-center text-center justify-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">
+                Contratar
+              </button>
             </div>
           </div>
         </div>
