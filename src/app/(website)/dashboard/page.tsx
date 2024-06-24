@@ -55,7 +55,7 @@ const DashboardPage = async () => {
             <div>
               {hasSub ? (
                 <>
-                  <div>Suscrito</div>
+                  <div>Suscripción Activa</div>
                 </>
               ) : (
                 <div className="flex items-center space-x-4">
@@ -67,7 +67,7 @@ const DashboardPage = async () => {
           </div>
           {hasSub ? (
             <>
-              <SubscriptionProfile/>
+              <SubscriptionProfile />
             </>
           ) : (
             <>
