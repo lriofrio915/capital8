@@ -1,21 +1,46 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const SubscriptionProfile: React.FC = () => {
   return (
-    <div className="bg-gray-100 flex flex-col items-center mt-20">
-      <div className="bg-white shadow-md rounded-lg p-8 max-w-lg text-center">
-        <h1 className="text-3xl font-bold mb-4">Bienvenido a Capital 8</h1>
-        <p className="text-gray-600 mb-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <div className="flex flex-col items-center py-20 min-h-screen">
+      <div className="bg-white shadow-lg rounded-xl p-10 max-w-2xl text-center">
+        <h1 className="text-4xl font-extrabold text-gray-800 mb-6">Bienvenido a Capital 8</h1>
+        <p className="text-gray-700 mb-8">
+          Facilitamos su éxito en los mercados financieros con una gestión personalizada de cuentas de trading. Seleccione el tipo de cuenta que desea operar.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <Link href="https://example.com/page1" className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition duration-300">
-            Cuenta Tradicional
-          </Link>
-          <Link href="https://example.com/page2" className="bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600 transition duration-300">
-            Cuenta Darwinex Zero
-          </Link>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
+          <div className="flex flex-col items-center">
+            <Image
+              src="https://luis-capital8.s3.us-east-2.amazonaws.com/eightcap-hd-logo.png"
+              alt="Eightcap"
+              width={200}
+              height={100}
+              className="mb-4"
+            />
+            <Link
+              href="https://join.eightcap.com/visit/?bta=42123&brand=eightcap"
+              className="bg-blue-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-blue-700 transition duration-300"
+            >
+              Cuenta Tradicional
+            </Link>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image
+              src="https://luis-capital8.s3.us-east-2.amazonaws.com/dar-zero.png"
+              alt="Darwinex Zero"
+              width={200}
+              height={100}
+              className="mb-4"
+            />
+            <Link
+              href="https://www.darwinexzero.com/es?fpr=fzv88&coupon=DWZ2319543MGM"
+              className="bg-green-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-green-700 transition duration-300"
+            >
+              Cuenta D-Zero
+            </Link>
+          </div>
         </div>
       </div>
     </div>
