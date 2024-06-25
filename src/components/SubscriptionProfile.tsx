@@ -20,7 +20,7 @@ const SubscriptionProfile: React.FC = () => {
               className="mb-4"
             />
             <Link
-              href="https://join.eightcap.com/visit/?bta=42123&brand=eightcap"
+              href="https://bit.ly/3ziIrph"
               className="bg-blue-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-blue-700 transition duration-300"
             >
               Cuenta Tradicional
@@ -35,7 +35,7 @@ const SubscriptionProfile: React.FC = () => {
               className="mb-4"
             />
             <Link
-              href="https://www.darwinexzero.com/es?fpr=fzv88&coupon=DWZ2319543MGM"
+              href="https://bit.ly/4cwGovX"
               className="bg-green-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-green-700 transition duration-300"
             >
               Cuenta D-Zero

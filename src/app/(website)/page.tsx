@@ -32,13 +32,13 @@ export default function Home() {
             />
           </div>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500 mt-2">
-            Fondo de Renta Variable
+            Gestión de Renta Variable
           </p>
           <h1 className="text-6xl font-bold title-font mt-4 mb-2 text-gray-800">
             Potencia tu Inversión
           </h1>
           <h2 className="mt-4 mb-8">
-            Nuestro equipo gestiona activamente cuentas de trading
+            Nuestro equipo gestiona activamente tus cuentas de trading
             <br />
             en el mercado de índices y acciones.
           </h2>
