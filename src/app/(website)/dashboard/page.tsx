@@ -11,6 +11,7 @@ import {
 import prisma from "@/src/lib/prisma";
 import Link from "next/link";
 import SubscriptionProfile from "@/src/components/SubscriptionProfile"
+import NoSubscriptionProfile from "@/src/components/NoSubscriptionProfile";
 
 const DashboardPage = async () => {
   const session = await auth();
@@ -72,7 +73,7 @@ const DashboardPage = async () => {
           ) : (
             <>
               <div className="h-screen">
-                <h1 className="text-center">Considera suscribirte</h1>
+                <NoSubscriptionProfile />
               </div>
             </>
           )}
