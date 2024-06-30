@@ -60,13 +60,7 @@ export default function Home() {
                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                   <FiCheckCircle size={16} color="#fff" />
                 </span>
-                Gestión integral de cuentas de Trading Tradicionales
-              </p>
-              <p className="flex items-center text-gray-600 mb-2">
-                <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                  <FiCheckCircle size={16} color="#fff" />
-                </span>
-                Administración experta de cuentas en Darwinex Zero
+                Gestión integral de cuentas de Trading
               </p>
               <p className="flex items-center text-gray-600 mb-2">
                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
