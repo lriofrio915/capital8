@@ -67,6 +67,7 @@ const NoSubscriptionProfile: React.FC = async () => {
                 El capital se invierte en el índice Nasdaq mediante Futuros y
                 CFDs.
               </li>
+              <li>La tasa de efectividad promedio supera el 60%.</li>
             </ul>
             <Image
               src="https://luis-capital8.s3.us-east-2.amazonaws.com/trading-floor.jpg"

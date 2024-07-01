@@ -4,8 +4,11 @@ import React from "react";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { auth, signIn } from "@/src/lib/auth";
 
-export default function Home() {
+export default async function Home() {
+  const session = await auth();
+  const user = session?.user;
   return (
     <section>
       <Box>
@@ -81,12 +84,24 @@ export default function Home() {
                 </span>
                 Soporte especializado disponible 24/7 vía WhatsApp
               </p>
-              <Link
-                className="flex items-center text-center justify-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded"
-                href={"/dashboard"}
-              >
-                Contratar
-              </Link>
+              {user ? (
+                <Link
+                  className="flex items-center text-center justify-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded"
+                  href={"/dashboard"}
+                >
+                  Contratar
+                </Link>
+              ) : (
+                <form
+                  action={async () => {
+                    "use server";
+                    await signIn();
+                  }}
+                  className="flex items-center text-center justify-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded"
+                >
+                  <button type="submit">Iniciar Sesión</button>
+                </form>
+              )}
             </div>
           </div>
         </div>
