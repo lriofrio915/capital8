@@ -10,8 +10,10 @@ const SubscriptionProfile: React.FC = () => {
           Bienvenido a Capital 8
         </h1>
         <p className="text-gray-700 mb-8">
-          Una vez que hayas fondeado tu cuenta en el Broker EightCap reenvíanos
-          las credenciales para poder conectarnos a tu cuenta de MetraTrader.
+          Una vez que hayas fondeado tu cuenta, recibirás un correo del Broker
+          con tus credenciales de MetaTrader. Por favor, reenvíanos esa
+          información (soporte@capital8tech.com) para que nuestros gestores
+          puedan comenzar a trabajar en tu inversión.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
           <div className="flex flex-col items-center">
