@@ -78,6 +78,12 @@ export default async function Home() {
                 </span>
                 Operamos con brokers altamente regulados
               </p>
+              <p className="flex items-center text-gray-600 mb-2">
+                <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <FiCheckCircle size={16} color="#fff" />
+                </span>
+                Cuenta mínima para gestionar: 1000 usd
+              </p>
               <p className="flex items-center text-gray-600 mb-6">
                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                   <FiCheckCircle size={16} color="#fff" />
@@ -89,7 +95,7 @@ export default async function Home() {
                   className="flex items-center text-center justify-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded"
                   href={"/dashboard"}
                 >
-                  Contratar
+                  Contratar un Gestor
                 </Link>
               ) : (
                 <form
