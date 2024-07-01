@@ -3,6 +3,7 @@ import Box from "@/src/components/Box";
 import React from "react";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -80,9 +81,12 @@ export default function Home() {
                 </span>
                 Soporte especializado disponible 24/7 vía WhatsApp
               </p>
-              <button className="flex items-center text-center justify-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">
+              <Link
+                className="flex items-center text-center justify-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded"
+                href={"/dashboard"}
+              >
                 Contratar
-              </button>
+              </Link>
             </div>
           </div>
         </div>

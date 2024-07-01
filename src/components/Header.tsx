@@ -1,8 +1,10 @@
 import Box from "./Box";
 import Logo from "./Logo";
-import { auth, signIn, signOut } from "@/src/lib/auth";
+import { auth } from "@/src/lib/auth";
 import Link from "next/link";
 import { FiLogOut, FiUser } from "react-icons/fi";
+import SignInButton from "./SignInButton";
+import LogoutButton from "./LogoutButton";
 
 const Header = async () => {
   const session = await auth();
@@ -27,35 +29,5 @@ const Header = async () => {
     </header>
   );
 };
-
-function SignInButton() {
-  return (
-    <form
-      action={async () => {
-        "use server";
-        await signIn();
-      }}
-    >
-      <button type="submit">
-        <FiUser className="h-4 w-4" />
-      </button>
-    </form>
-  );
-}
-
-function LogoutButton() {
-  return (
-    <form
-      action={async () => {
-        "use server";
-        await signOut();
-      }}
-    >
-      <button type="submit">
-        <FiLogOut className="h-4 w-4" />
-      </button>
-    </form>
-  );
-}
 
 export default Header;
