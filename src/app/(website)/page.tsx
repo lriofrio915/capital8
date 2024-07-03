@@ -103,9 +103,13 @@ export default async function Home() {
                     "use server";
                     await signIn();
                   }}
-                  className="flex items-center text-center justify-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded"
                 >
-                  <button type="submit">Iniciar Sesión</button>
+                  <button
+                    className="flex items-center text-center justify-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded"
+                    type="submit"
+                  >
+                    Iniciar Sesión
+                  </button>
                 </form>
               )}
             </div>
