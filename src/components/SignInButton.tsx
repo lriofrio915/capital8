@@ -1,5 +1,5 @@
 import { FiUser } from "react-icons/fi";
-import { signIn } from "../lib/auth";
+import { signIn } from "../auth";
 
 const SignInButton = () => {
   return (

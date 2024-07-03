@@ -8,7 +8,7 @@ import {
   hasSubscription,
 } from "@/src/lib/billing";
 import prisma from "../lib/prisma";
-import { auth } from "../lib/auth";
+import { auth } from "../auth";
 import { redirect } from "next/navigation";
 
 const NoSubscriptionProfile: React.FC = async () => {

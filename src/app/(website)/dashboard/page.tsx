@@ -1,6 +1,6 @@
 import React from "react";
 import Box from "@/src/components/Box";
-import { auth } from "@/src/lib/auth";
+import { auth } from "@/src/auth";
 import { redirect } from "next/navigation";
 import {
   createCheckoutLink,
@@ -10,7 +10,7 @@ import {
 } from "@/src/lib/billing";
 import prisma from "@/src/lib/prisma";
 import Link from "next/link";
-import SubscriptionProfile from "@/src/components/SubscriptionProfile"
+import SubscriptionProfile from "@/src/components/SubscriptionProfile";
 import NoSubscriptionProfile from "@/src/components/NoSubscriptionProfile";
 
 const DashboardPage = async () => {

@@ -4,7 +4,7 @@ import React from "react";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import { auth, signIn } from "@/src/lib/auth";
+import { auth, signIn } from "@/src/auth";
 
 export default async function Home() {
   const session = await auth();

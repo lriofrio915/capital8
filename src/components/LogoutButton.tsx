@@ -1,5 +1,5 @@
 import React from "react";
-import { signOut } from "../lib/auth";
+import { signOut } from "../auth";
 import { FiLogOut } from "react-icons/fi";
 
 const LogoutButton = () => {
