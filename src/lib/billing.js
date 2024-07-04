@@ -1,4 +1,4 @@
-import { auth } from "@/src/lib/auth";
+import { auth } from "@/src/auth";
 import Stripe from "stripe";
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
