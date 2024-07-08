@@ -36,15 +36,15 @@ export default async function Home() {
             />
           </div>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500 mt-2">
-            Gestión de Renta Variable
+            Gestión de Cuentas de Trading
           </p>
           <h1 className="text-6xl font-bold title-font mt-4 mb-2 text-gray-800">
             Potencia tu Inversión
           </h1>
           <h2 className="mt-4 mb-8">
-            Nuestro equipo gestiona activamente tus cuentas de trading
+            Nuestro equipo opera activamente en el mercado de
             <br />
-            en el mercado de índices y acciones.
+            índices y acciones.
           </h2>
           <div className="p-4 w-full">
             <div className="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden">
@@ -52,7 +52,7 @@ export default async function Home() {
                 PROFESIONAL
               </span>
               <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
-                Gestión de Cuentas Personalizada
+                SUSCRIPCIÓN DE GESTIÓN
               </h2>
               <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                 <span>$150</span>
@@ -64,7 +64,8 @@ export default async function Home() {
                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                   <FiCheckCircle size={16} color="#fff" />
                 </span>
-                Gestión integral de cuentas de Trading
+                Gestión integral de cuentas de Trading (cuenta clásica y/o
+                darwinex zero)
               </p>
               <p className="flex items-center text-gray-600 mb-2">
                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -82,7 +83,7 @@ export default async function Home() {
                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                   <FiCheckCircle size={16} color="#fff" />
                 </span>
-                Cuenta mínima para gestionar: 1000 usd
+                Tamaño de cuenta mínimo a gestionar: 500 usd
               </p>
               <p className="flex items-center text-gray-600 mb-6">
                 <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
