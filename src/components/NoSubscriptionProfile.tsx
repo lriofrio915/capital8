@@ -49,7 +49,7 @@ const NoSubscriptionProfile: React.FC = async () => {
           </h2>
           <div className="flex flex-col items-center">
             <Image
-              src="https://luis-capital8.s3.us-east-2.amazonaws.com/trading-floor.jpg"
+              src="https://luis-capital8.s3.us-east-2.amazonaws.com/finance.png"
               alt="Trading Solutions"
               width={400}
               height={400}
