@@ -5,13 +5,24 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { auth, signIn } from "@/src/auth";
+import Hero from "@/src/components/Hero";
+import Feature from "@/src/components/Feature";
+import Pricing from "@/src/components/Pricing";
+import Locations from "@/src/components/Locations";
+import Testimonials from "@/src/components/Testimonials";
+import Cards from "@/src/components/Cards";
 
 export default async function Home() {
   const session = await auth();
   const user = session?.user;
   return (
-    <section>
-      <Box>
+    <>
+      <Hero />
+      <Feature />
+      <Pricing />
+      <Locations />
+      <Testimonials />
+      {/* <Box>
         <div className="flex flex-col text-center w-full mb-20 mt-12">
           <div className="flex justify-center space-x-1">
             <FontAwesomeIcon
@@ -96,7 +107,7 @@ export default async function Home() {
                   className="flex items-center text-center justify-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded"
                   href={"/dashboard"}
                 >
-                  Contratar un Gestor
+                  Más Información
                 </Link>
               ) : (
                 <form
@@ -116,7 +127,7 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </Box>
-    </section>
+      </Box> */}
+    </>
   );
 }
