@@ -11,6 +11,7 @@ import Pricing from "@/src/components/Pricing";
 import Locations from "@/src/components/Locations";
 import Testimonials from "@/src/components/Testimonials";
 import Cards from "@/src/components/Cards";
+import CTA from "@/src/components/CTA";
 
 export default async function Home() {
   const session = await auth();
@@ -22,6 +23,7 @@ export default async function Home() {
       <Pricing />
       <Locations />
       <Testimonials />
+      <CTA />
       {/* <Box>
         <div className="flex flex-col text-center w-full mb-20 mt-12">
           <div className="flex justify-center space-x-1">
