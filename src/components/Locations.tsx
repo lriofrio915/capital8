@@ -12,7 +12,7 @@ const Locations = () => {
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
-      id="pricing"
+      id="locations"
     >
       <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full my-16">
@@ -55,35 +55,35 @@ const Locations = () => {
                 height={177}
                 width={177}
                 alt="Duo Markets Finance"
-                className="mt-4 lg:mt-2"
+                className="m-4 lg:m-2"
               />
               <Image
                 src="https://luis-capital8.s3.us-east-2.amazonaws.com/darwinexzerologo.webp"
                 height={177}
                 width={177}
                 alt="Darwinex Zero"
-                className="mt-2 lg:mt-0"
+                className="m-2 lg:m-0"
               />
               <Image
                 src="https://luis-capital8.s3.us-east-2.amazonaws.com/Trust-Wallet-logo-es.png"
                 height={177}
                 width={177}
                 alt="Trust Wallet"
-                className="mt-2 lg:mt-0"
+                className="m-2 lg:m-0"
               />
               <Image
                 src="https://luis-capital8.s3.us-east-2.amazonaws.com/metamaskwallet.png"
                 height={177}
                 width={177}
                 alt="Metamask Wallet"
-                className="mt-2 lg:mt-0"
+                className="m-2 lg:m-0"
               />
               <Image
                 src="https://luis-capital8.s3.us-east-2.amazonaws.com/binanceicon.png"
                 height={177}
                 width={177}
                 alt="Binance Exchange"
-                className="mt-2 lg:mt-0"
+                className="m-2 lg:m-0"
               />
             </motion.div>
           </ScrollAnimationWrapper>

@@ -28,7 +28,7 @@ const Testimonials = () => {
       country: "Ecuador",
       rating: "4.5",
       testimonial:
-        "Estoy muy contenta con la atención al usuario que he recibido, han respondido todas mis inquietudes y cada vez que deseo comprar o vender Bitcoin me atienden inmediatamente",
+        "Estoy muy contenta con la atención al usuario que he recibido, han respondido todas mis inquietudes y cada vez que deseo comprar o vender Bitcoin atienden inmediatamente mi solicitud",
     },
     {
       name: "Richard",
@@ -55,7 +55,7 @@ const Testimonials = () => {
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
-      id="pricing"
+      id="testimonials"
     >
       <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full my-16" id="testimoni">

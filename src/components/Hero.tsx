@@ -1,11 +1,13 @@
 "use client";
 
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import getScrollAnimation from "@/src/utils/getScrollAnimation";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import ScrollAnimationWrapper from "@/src/components/ScrollAnimationWrapper";
+import Link from "next/link";
+import { Link as LinkScroll } from "react-scroll";
 
 interface User {
   name: string;
@@ -16,7 +18,6 @@ interface User {
 interface HeroProps {
   listUser?: User[];
 }
-
 const Hero: React.FC<HeroProps> = ({
   listUser = [
     {
@@ -30,12 +31,14 @@ const Hero: React.FC<HeroProps> = ({
       icon: "https://luis-capital8.s3.us-east-2.amazonaws.com/icon/gridicons_location.svg",
     },
     {
-      name: "Riesgo-Beneficio",
-      number: "1:1",
+      name: "Confianza",
+      number: "100%",
       icon: "https://luis-capital8.s3.us-east-2.amazonaws.com/icon/bx_bxs-server.svg",
     },
   ],
 }) => {
+  const [activeLink, setActiveLink] = useState<string | null>(null);
+
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
@@ -55,7 +58,9 @@ const Hero: React.FC<HeroProps> = ({
               Nuestro equipo de gestores expertos invierten en el mercado de
               índices y acciones mediante futuros y cfds.
             </p>
-            <ButtonPrimary>Comenzar</ButtonPrimary>
+            <LinkScroll to="pricing" spy={true} smooth={true} duration={1000}>
+              <ButtonPrimary>Comenzar</ButtonPrimary>
+            </LinkScroll>
           </div>
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>
