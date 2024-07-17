@@ -70,8 +70,8 @@ const Testimonials = () => {
               variants={scrollAnimation}
               className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
             >
-              Estas son las historias de nuestros clientes que nos han
-              acompañado con gran placer al utilizar nuestros servicios.
+              Estas son las historias de los clientes que nos han acompañado
+              satisfactoriamente al utilizar nuestros servicios.
             </motion.p>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="w-full flex flex-col py-12">

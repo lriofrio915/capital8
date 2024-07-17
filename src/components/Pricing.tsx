@@ -6,6 +6,7 @@ import ButtonOutline from "./misc/ButtonOutline";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import Link from "next/link";
 
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -117,7 +118,9 @@ const Pricing = () => {
                   <p className="text-2xl text-black-600 text-center mb-4 ">
                     Suscríbete
                   </p>
-                  <ButtonOutline>Me Interesa</ButtonOutline>
+                  <Link href={"https://bit.ly/4cwGovX"} target="_blank">
+                    <ButtonOutline>Me Interesa</ButtonOutline>
+                  </Link>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
@@ -161,7 +164,9 @@ const Pricing = () => {
                   <p className="text-2xl text-black-600 text-center mb-4 ">
                     Solicítalo
                   </p>
-                  <ButtonOutline>Me Interesa</ButtonOutline>
+                  <Link href={"https://bit.ly/4cLzWlq"} target="_blank">
+                    <ButtonOutline>Me Interesa</ButtonOutline>
+                  </Link>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
