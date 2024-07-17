@@ -102,7 +102,7 @@ const Pricing = () => {
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
-                    Cuenta requerida: Darwinex Zero
+                    Cuenta requerida: Suscripción D-Zero
                   </li>
                   <li className="relative check custom-list my-2">
                     Activos de gestión: Acciones e Índices
