@@ -23,7 +23,7 @@ export default async function Home() {
       <Pricing />
       <Locations />
       <Testimonials />
-      <CTA />
+      {/* <CTA /> */}
       {/* <Box>
         <div className="flex flex-col text-center w-full mb-20 mt-12">
           <div className="flex justify-center space-x-1">

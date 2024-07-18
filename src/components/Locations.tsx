@@ -11,11 +11,11 @@ const Locations = () => {
 
   return (
     <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
+      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-1"
       id="locations"
     >
       <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
-        <div className="flex flex-col w-full my-16">
+        <div className="flex flex-col w-full mt-16">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}

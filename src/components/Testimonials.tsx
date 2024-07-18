@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import Cards from "@/src/components/Cards";
+import CTA from "./CTA";
 
 const Testimonials = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -54,11 +55,12 @@ const Testimonials = () => {
 
   return (
     <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
-      id="testimonials"
+      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-1"
+      id="testimoni"
     >
+      <CTA />
       <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
-        <div className="flex flex-col w-full my-16" id="testimoni">
+        <div className="flex flex-col w-full my-16" id="testimonials">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}

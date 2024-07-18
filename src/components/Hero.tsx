@@ -71,6 +71,7 @@ const Hero: React.FC<HeroProps> = ({
                 width={612}
                 height={383}
                 style={{ width: "100%", height: "auto" }}
+                priority
               />
             </motion.div>
           </div>

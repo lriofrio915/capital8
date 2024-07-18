@@ -68,8 +68,16 @@ const Cards: React.FC<CardProps> = ({ listCards }) => {
                     <Image
                       src={card.image}
                       alt="Icon People"
-                      layout="fill"
-                      className="rounded-full object-cover"
+                      width={64}
+                      height={64}
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                      }}
+                      className="rounded-full object-cover w-auto h-auto"
                     />
                   </div>
                   <div className="flex flex-col ml-5 text-left">
@@ -85,12 +93,12 @@ const Cards: React.FC<CardProps> = ({ listCards }) => {
                   <p className="text-sm">{card.rating}</p>
                   <span className="flex ml-4">
                     <Image
-                      src={
-                        "https://luis-capital8.s3.us-east-2.amazonaws.com/icon/stars.svg"
-                      }
+                      src="https://luis-capital8.s3.us-east-2.amazonaws.com/icon/stars.svg"
                       alt="star icon"
                       width={16}
                       height={16}
+                      className="object-contain"
+                      style={{ width: "auto", height: "auto" }}
                     />
                   </span>
                 </div>
