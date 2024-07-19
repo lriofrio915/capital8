@@ -76,7 +76,12 @@ const Pricing = () => {
                   <p className="text-2xl text-black-600 text-center mb-4 ">
                     Fondea tu Cuenta
                   </p>
-                  <ButtonOutline>Me Interesa</ButtonOutline>
+                  <Link
+                    href={"https://t.duomarkets.com/?t=ENZW0U"}
+                    target="_blank"
+                  >
+                    <ButtonOutline>Me Interesa</ButtonOutline>
+                  </Link>
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>

@@ -4,13 +4,9 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "@/src/components/misc/ButtonOutline";
-import { handleSignIn } from "@/src/auth/signInAction";
+import SignInButton from "../misc/SignInButton";
 
-interface HeaderProps {
-  user: { name: string } | null | undefined;
-}
-
-const Header: React.FC<HeaderProps> = ({ user }) => {
+const Header: React.FC = () => {
   const [activeLink, setActiveLink] = useState<string | null>(null);
   const [scrollActive, setScrollActive] = useState<boolean>(false);
 
@@ -55,22 +51,6 @@ const Header: React.FC<HeaderProps> = ({ user }) => {
             >
               Inicio
             </LinkScroll>
-            {/* <LinkScroll
-              activeClass="border-orange-500 text-orange-500"
-              to="feature"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => setActiveLink("feature")}
-              className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative " +
-                (activeLink === "feature"
-                  ? "text-orange-500 animation-active"
-                  : "text-black-500 hover:text-orange-500")
-              }
-            >
-              Servicios
-            </LinkScroll> */}
             <LinkScroll
               activeClass="border-orange-500 text-orange-500"
               to="pricing"
@@ -105,23 +85,15 @@ const Header: React.FC<HeaderProps> = ({ user }) => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            {user ? (
-              <Link
-                className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all"
-                href="/dashboard"
-              >
-                Mi Cuenta
-              </Link>
-            ) : (
-              <form action={handleSignIn}>
-                <button
-                  className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all"
-                  type="submit"
-                >
-                  Iniciar Sesión
-                </button>
-              </form>
-            )}
+            {/* <Link
+              className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all"
+              href="/dashboard"
+            >
+              Mi Cuenta
+            </Link> */}
+
+            <SignInButton />
+
             <ButtonOutline>Registrarse</ButtonOutline>
           </div>
         </nav>
@@ -160,36 +132,6 @@ const Header: React.FC<HeaderProps> = ({ user }) => {
               </svg>
               Inicio
             </LinkScroll>
-            {/* <LinkScroll
-              activeClass="border-orange-500 text-orange-500"
-              to="feature"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => setActiveLink("feature")}
-              className={
-                "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                (activeLink === "feature"
-                  ? "border-orange-500 text-orange-500"
-                  : "border-transparent")
-              }
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                />
-              </svg>
-              Servicios
-            </LinkScroll> */}
             <LinkScroll
               activeClass="border-orange-500 text-orange-500"
               to="pricing"
